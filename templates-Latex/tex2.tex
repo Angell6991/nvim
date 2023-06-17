@@ -1,0 +1,179 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{txfonts}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{color}
+\usepackage{parskip}
+\usepackage[spanish]{babel}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Nombre del Autor}
+
+%definiendo notación para los braket´s y spin´s
+\newcommand{\spin}[1]{\boldsymbol{#1}}
+\newcommand{\bra}[1]{\left\langle {#1} \right|}
+\newcommand{\ket}[1]{\left| {#1} \right\rangle}
+\newcommand{\esperado}[1]{\left \langle  {#1} \right\rangle}
+\newcommand{\braket}[2]{\left \langle  {#1} \mid {#2} \right\rangle}
+
+%definiendo coorchete de Poisson, conmutador y anticonmutador
+\newcommand{\poisson}[2]{ \left\lbrace  {#1},{#2} \right\rbrace  }
+\newcommand{\conm}[2]{\left[ {#1},{#2} \right]}
+\newcommand{\antconm}[2]{\left(\; {#1}, {#2} \; \right)}
+
+
+%definiendo la norma y el determinante
+\newcommand{\norma}[1]{\left| \; {#1} \; \right|}
+\newcommand{\Det}[1]{\left| \left| \; {#1} \; \right|\right|}
+
+%Definiendo la forma del Jacobiano
+\newcommand{\jac}[2]{\mathcal{J}_{\;\;#1}^{#2}}
+\newcommand{\jacinverse}[2]{\mathcal{J}_{#1}^{\;\;#2}}
+
+%Definiendo parte real y imaginaria%
+\newcommand{\reaal}[1]{Re\left\lbrace \; {#1} \; \right\rbrace}
+\newcommand{\imag}[1]{Im\left\lbrace \; {#1} \; \right\rbrace}
+
+
+\begin{document}
+
+
+\begin{center}
+\section*{UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS}
+\end{center}
+
+
+\begin{center}
+LICENCIATURA EN FISICA
+\end{center}
+
+
+\begin{center}
+Nombre del Autor
+\end{center}
+
+
+\begin{center}
+Numero de identificacion
+\end{center}
+
+
+\vspace*{0.4cm}
+\vspace*{-0.4cm}
+\begin{center}\rule{0.9\textwidth}{0.1mm} \end{center}
+
+\begin{quote}
+\begin{center}
+Resumen
+\end{center}
+El propósito del presente trabajo es la determinación de la velocidad de la luz en el aire a través del método opto-electrónico que permite cumplir este  propósito a distancias muy cortas, por lo que su uso es ideal en el laboratorio. Gracias a las medidas que permite obtener este tratamiento, se determinara  esta constante fundamental a  partir de dos procedimientos: el primero por medio de la figura de lissajous formada en el plano XY en el osciloscopio por el desfase de las dos señales  (emisora y receptora) y el segundo por medio del desfase presentado en las funciones  cosenoidales  de ambas señales. La experiencia  se realizara  por medio del montaje experimental ofrecido por el equipo Phywe de la medición de la velocidad de la luz (1). 
+
+\textbf{\emph{Palabras Clave}: Velocidad de la luz, interferencia,}
+\end{quote}
+
+\begin{center}\rule{0.9\textwidth}{0.1mm} \end{center}
+\vspace*{0.5cm}
+
+
+\begin{multicols}{2}
+
+\section{Introducción}  	
+%\input{~/Descargas/bibliografia.tex} %input es para agregar el contenido de otro documento del tipo .tex ,"precaución con la ruta del archivo"
+\label{sec1} %label es para etiqueter
+
+
+Un artículo suele empezarse con un resumen. Dicho resumen debe ser claro y conciso, y no tiene que tener referencias bibliográficas. En inglés, abstract significa resumen, y resume significa reanudar. Cuidado no confundas esas dos palabras.
+% \ref{sec1} %ref llamamos la etiqueta
+
+\section{Teória y o ecuaciones}
+%\input{~/Descargas/bibliografia.tex}
+\label{sec2} 
+
+\section{Procedimiento experimental}
+%\input{~/Descargas/bibliografia.tex}
+\label{sec3} 
+
+\section{Datos y gráficas}
+%\input{~/Descargas/bibliografia.tex}
+\label{sec4} 
+
+\section{Resultados y análisis}
+%\input{~/Descargas/bibliografia.tex}
+\label{sec5} 
+
+\section{Concluciones}
+%\input{~/Descargas/bibliografia.tex}
+\label{sec6} 
+
+
+\end{multicols}
+
+
+
+
+% Ecuacion:
+% \begin{equation}
+% * \; * \; *
+% \label{eq1}
+% \end{equation}
+
+
+% Matriz:
+% \left( \;
+% \begin{matrix}
+% 	* & * \\
+% 	* & * \\
+% 	* & * 
+% \end{matrix}
+% \; \right)
+
+
+% Tabla:
+% \begin{tabular}{|c|c|}
+%	\hline
+%	* & * \\
+%	\hline
+%	* & * \\
+%	\hline
+% \end{tabular}
+
+% Enumerar:
+% \begin{enumerate}
+% \item
+% \item
+% \item
+% \end{enumerate}
+
+
+% Imagen:
+% \begin{figure}[h]
+%	\includegraphics[width=0.7\linewidth, height=0.7\textheight]{~/Imágenes/Imagenes/00wallpaper03.jpg}
+	%\includegraphics[scale=1]{~/Imágenes/Imagenes/00wallpaper03.jpg}
+%	\caption{descripcción}
+	%\label{imag1}
+% \end{figure}
+
+
+% Bibliografia:
+% \begin{thebibliography}{00}
+% \bibitem{REF_1} 
+% \bibitem{REF_2} 
+% \bibitem{REF_4}
+% \bibitem{REF_5}
+% \bibitem{REF_6}
+% \end{thebibliography}
+
+
+
+
+
+
+
+
+
+\end{document}

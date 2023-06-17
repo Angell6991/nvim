@@ -1,0 +1,67 @@
+\documentclass[10pt,a4paper,openany]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{txfonts}
+\usepackage{mathrsfs}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage{cancel}
+\usepackage{parskip}
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\author{Miguel Angel Rodríguez Guzmán}
+
+
+%definiendo notación para los braket´s y spin´s
+\newcommand{\spin}[1]{\boldsymbol{#1}}
+\newcommand{\bra}[1]{\left\langle {#1} \right|}
+\newcommand{\ket}[1]{\left| {#1} \right\rangle}
+\newcommand{\esperado}[1]{\left \langle  {#1} \right\rangle}
+\newcommand{\braket}[2]{\left \langle  {#1} \mid {#2} \right\rangle}
+
+%definiendo coorchete de Poisson, conmutador y anticonmutador
+\newcommand{\poisson}[2]{ \left\lbrace  {#1},{#2} \right\rbrace  }
+\newcommand{\conm}[2]{\left[ {#1},{#2} \right]}
+\newcommand{\antconm}[2]{\left(\; {#1}, {#2} \; \right)}
+
+
+%definiendo la norma y el determinante
+\newcommand{\norma}[1]{\left| \; {#1} \; \right|}
+\newcommand{\Det}[1]{\left| \left| \; {#1} \; \right|\right|}
+
+%Definiendo la forma del Jacobiano
+\newcommand{\jac}[2]{\mathcal{J}_{\;\;#1}^{#2}}
+\newcommand{\jacinverse}[2]{\mathcal{J}_{#1}^{\;\;#2}}
+
+%Definiendo parte real y imaginaria%
+\newcommand{\reaal}[1]{Re\left\lbrace \; {#1} \; \right\rbrace}
+\newcommand{\imag}[1]{Im\left\lbrace \; {#1} \; \right\rbrace}
+	
+
+
+\begin{document}
+
+%\include{Portada} %incluir Portada Nota: el archivo de la portada debe de estar e la misma carpeta dende se aloje este archivo
+
+\tableofcontents
+	
+\chapter*{Introducción}
+	%\input{Intro}
+	\addcontentsline{toc}{section}{ \textbf{Introducción}}
+	
+		
+\chapter{Nombre del capitulo}
+	%\input{1 Cap Relatividad general/Relatividad General}
+	
+	\section{Nombre de la seccion}  
+	%\label{sec1} %etiqueta
+	%\input{1 Cap Relatividad general/Vectores y C Vectores}
+	
+	\subsection{Nombre de la subseccion}
+	%\input{1 Cap Relatividad general/C Posiscion}
+	
+	
+\end{document}
