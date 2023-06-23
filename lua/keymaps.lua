@@ -4,7 +4,6 @@ local map 	= vim.api.nvim_set_keymap
 local default_opts = {noremap = true, silent = true}
 local cmd 	= vim.cmd
 
-
 --------------------Cambiar_Buffer-----------------------
 
 map('n', '<S-Right>', ':bnext<CR>', default_opts)
@@ -40,4 +39,5 @@ vim.keymap.set("v", "<C-Up>", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-
+---Linea_de_resaltado_sobre_el_cursor
+vim.o.cursorline = true

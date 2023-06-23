@@ -54,7 +54,13 @@ return require('packer').startup(function(use)
  }
 
  use 'lervag/vimtex'
+ 
+ --theme_nvim
+ use "rebelot/kanagawa.nvim"
 
-
+ use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+ ---Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+ 
+ use 'p00f/nvim-ts-rainbow'
 
 end)
