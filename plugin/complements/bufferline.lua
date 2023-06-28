@@ -8,8 +8,7 @@ require('bufferline').setup {
     close_icon = '',
     left_trunc_marker = '',
     right_trunc_marker = '',
-    separator_style = {"" ,""}--"slant"| "thick" | "thin" | { 'any', 'any' },
+    separator_style = {"" ,""},--"slant"| "thick" | "thin" | { 'any', 'any' },
 
-
-      }
+    }
 }

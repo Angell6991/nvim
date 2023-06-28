@@ -35,3 +35,5 @@ opt.isfname:append "@-@"
 o.clipboard = "unnamedplus"
 o.term = "zsh"
 o.encoding = "utf-8"
+o.termguicolors = true
+o.cursorline = true

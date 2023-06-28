@@ -39,5 +39,4 @@ vim.keymap.set("v", "<C-Up>", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
----Linea_de_resaltado_sobre_el_cursor
-vim.o.cursorline = true
+

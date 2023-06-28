@@ -94,11 +94,6 @@ _G.packer_plugins = {
     path = "/home/angell/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
-  ["kanagawa.nvim"] = {
-    loaded = true,
-    path = "/home/angell/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
-    url = "https://github.com/rebelot/kanagawa.nvim"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/angell/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -118,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/angell/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["modicator.nvim"] = {
+    loaded = true,
+    path = "/home/angell/.local/share/nvim/site/pack/packer/start/modicator.nvim",
+    url = "https://github.com/mawkler/modicator.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -144,6 +144,11 @@ _G.packer_plugins = {
     needs_bufread = false,
     path = "/home/angell/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["oxocarbon.nvim"] = {
+    loaded = true,
+    path = "/home/angell/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
