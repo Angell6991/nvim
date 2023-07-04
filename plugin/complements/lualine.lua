@@ -1,7 +1,7 @@
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = "pywal", --'codedark', 'moonfly','codedark',
+    theme = "moonfly", --'codedark', 'moonfly','codedark',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {
