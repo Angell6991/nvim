@@ -42,11 +42,12 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 --- Abrir_y_cerrar_vsplit
 map('n', '<leader>v', ':vs<CR>', { noremap = true, silent = true })
+map('n', '<leader>b', ':sp<CR>', { noremap = true, silent = true })
 map('n', '<leader>q', ':q<CR>', { noremap = true, silent = true })
 
 
 ---Mapeo_de_teclas_para_desplazarse_entre_vsplit
-vim.api.nvim_set_keymap('n', '<C-I>', '<C-W><C-J>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-K>', '<C-W><C-K>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-L>', '<C-W><C-L>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-J>', '<C-W><C-H>', { noremap = true, silent = true })
+map('n', '<C-K>', '<C-W><C-J>', { noremap = true, silent = true })
+map('n', '<C-I>', '<C-W><C-K>', { noremap = true, silent = true })
+map('n', '<C-L>', '<C-W><C-L>', { noremap = true, silent = true })
+map('n', '<C-J>', '<C-W><C-H>', { noremap = true, silent = true })
