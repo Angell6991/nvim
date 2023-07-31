@@ -65,5 +65,6 @@ return require('packer').startup(function(use)
 
  use {'mawkler/modicator.nvim'}
 
+
 end)
 

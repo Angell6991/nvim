@@ -51,3 +51,14 @@ map('n', '<C-K>', '<C-W><C-J>', { noremap = true, silent = true })
 map('n', '<C-I>', '<C-W><C-K>', { noremap = true, silent = true })
 map('n', '<C-L>', '<C-W><C-L>', { noremap = true, silent = true })
 map('n', '<C-J>', '<C-W><C-H>', { noremap = true, silent = true })
+
+
+-- Configurar_el_atajo_de_teclado_para_tabular_en_modo_normal
+map('n', '<Tab>', '>>', { noremap = true, silent = true })
+map('n', '<S-Tab>', '<<', { noremap = true, silent = true })
+
+
+-- Configurar_el_atajo_de_teclado_para_tabular_en_modo_visual
+map('v', '<Tab>', '>gv', { noremap = true, silent = true })
+map('v', '<S-Tab>', '<gv', { noremap = true, silent = true })
+

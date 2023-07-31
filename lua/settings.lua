@@ -26,7 +26,7 @@ opt.hlsearch    = false
 opt.incsearch   = true
 
 
-opt.scrolloff    = 16
+opt.scrolloff    = 100
 opt.signcolumn  = "no"
 opt.isfname:append "@-@"
 
