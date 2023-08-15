@@ -32,6 +32,8 @@ map('n', '<leader>py2', ':lua export_template("~/.config/nvim/templates-Python/p
 map('n', '<leader>py3', ':lua export_template("~/.config/nvim/templates-Python/plot_03.py")<CR>', default_opts)
 map('n', '<leader>py4', ':lua export_template("~/.config/nvim/templates-Python/plot_04.py")<CR>', default_opts)
 
+map('n', '<leader>pyl', ':lua export_template("~/.config/nvim/templates-Python/regresion_lineal.py")<CR>', default_opts)
+
 -------------------------Remaps--------------------------
 
 ---Mover_Bloques
