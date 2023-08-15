@@ -21,13 +21,16 @@ map('n', '<leader>s', ':w <CR>', {noremap = true, silent = true})
 ---------------------Atajos_LaTex------------------------
 
 map('n', '<leader>tx1', ':lua export_template("~/.config/nvim/templates-Latex/tex1.tex")<CR>', default_opts)
-
 map('n', '<leader>tx2', ':lua export_template("~/.config/nvim/templates-Latex/tex2.tex")<CR>', default_opts)
-
 map('n', '<leader>port', ':lua export_template("~/.config/nvim/templates-Latex/Portada.tex")<CR>', default_opts)
-
 map('n', '<leader>book', ':lua export_template("~/.config/nvim/templates-Latex/book.tex")<CR>', default_opts)
 
+---------------------Atajos_Python------------------------
+
+map('n', '<leader>py1', ':lua export_template("~/.config/nvim/templates-Python/plot_01.py")<CR>', default_opts)
+map('n', '<leader>py2', ':lua export_template("~/.config/nvim/templates-Python/plot_02.py")<CR>', default_opts)
+map('n', '<leader>py3', ':lua export_template("~/.config/nvim/templates-Python/plot_03.py")<CR>', default_opts)
+map('n', '<leader>py4', ':lua export_template("~/.config/nvim/templates-Python/plot_04.py")<CR>', default_opts)
 
 -------------------------Remaps--------------------------
 
