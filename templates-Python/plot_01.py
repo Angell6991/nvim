@@ -7,6 +7,12 @@ os.system("clear")
 x = np.linspace(-10, 10, 100)
 y = 1 / (1 + np.exp(-x))
 
+#----------------Configuración_para_usar_LaTeX_en_matplotlib-------------#
+# plt.rcParams.update({
+#     "text.usetex": True,
+#     "font.family": "serif",
+#     "font.serif": ["Computer Modern Roman"],})
+
 plt.figure(facecolor="#1D1D1D")
 
 plt.plot(x, y, color="#00CCDE", label=r"$ \frac{1}{1 + e^{-x}}$")    # color: #E53681
