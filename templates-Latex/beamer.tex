@@ -1,0 +1,148 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{txfonts}
+\usepackage{mathrsfs}
+\usepackage{color}
+\usepackage{parskip}
+\usepackage{pagecolor}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+%definiendo notación para los braket´s y spin´s
+\newcommand{\spin}[1]{\boldsymbol{#1}}
+\newcommand{\bra}[1]{\left\langle {#1} \right|}
+\newcommand{\ket}[1]{\left| {#1} \right\rangle}
+\newcommand{\esperado}[1]{\left \langle  {#1} \right\rangle}
+\newcommand{\braket}[2]{\left \langle  {#1} \mid {#2} \right\rangle}
+
+%definiendo coorchete de Poisson, conmutador y anticonmutador
+\newcommand{\poisson}[2]{ \left\lbrace  {#1},{#2} \right\rbrace  }
+\newcommand{\conm}[2]{\left[ {#1},{#2} \right]}
+\newcommand{\antconm}[2]{\left(\; {#1}, {#2} \; \right)}
+
+
+%definiendo la norma y el determinante
+\newcommand{\norma}[1]{\left| \; {#1} \; \right|}
+\newcommand{\Det}[1]{\left| \left| \; {#1} \; \right|\right|}
+
+%Definiendo la forma del Jacobiano
+\newcommand{\jac}[2]{\mathcal{J}_{\;\;#1}^{#2}}
+\newcommand{\jacinverse}[2]{\mathcal{J}_{#1}^{\;\;#2}}
+
+%Definiendo parte real y imaginaria%
+\newcommand{\reaal}[1]{Re\left\lbrace \; {#1} \; \right\rbrace}
+\newcommand{\imag}[1]{Im\left\lbrace \; {#1} \; \right\rbrace}
+
+
+%Definiendo colores Hexadecimales 
+\definecolor{rojo}{HTML}{E53681}
+\definecolor{azul}{HTML}{00CCDE}
+\definecolor{verde}{HTML}{5AEDA3}
+\definecolor{gris}{HTML}{1D1D1D}
+
+%Definiendo color de la enumeracion de paguinas
+% \pagestyle{fancy}
+% \fancyhf{}
+% \renewcommand{\headrulewidth}{0pt} 
+% \fancyfoot[C]{\textcolor{white}{\thepage}} 
+
+%Cambiar el tema a uno de los disponibles
+% \usetheme{Copenhagen}
+% \usetheme{Darmstadt}
+% \usetheme{CambridgeUS}
+% \usetheme{Warsaw}
+% \usetheme{Madrid}
+\usetheme{Boadilla}
+% \usetheme{Berkeley}
+% \usetheme{Pittsburgh}
+% \usetheme{Rochester}
+
+%Ajusta los colores del tema
+\setbeamercolor{background canvas}{bg=gris}
+\setbeamercolor{normal text}{fg=white}
+\setbeamercolor{structure}{fg=verde}
+
+%Cambiar la fuente
+% \usefonttheme{professionalfonts} 
+\usefonttheme{serif} 
+% \usefonttheme{structurebold} 
+% \usefonttheme{structuresmallcapsserif} 
+
+%Información del título
+\title{Título de la Presentación}
+\subtitle{Subtítulo de la Presentación}
+\author{Nombre Autor}
+\date{}
+% \date{\today}
+
+\begin{document}
+
+%Página de título
+\begin{frame}
+  \titlepage 
+\end{frame}
+
+\begin{frame}
+    \frametitle{Titulo del frame}
+\end{frame}
+
+\end{document}
+
+% Ecuacion:
+% \begin{equation}
+% * \; * \; *
+% \label{eq1}
+% \end{equation}
+
+
+% Matriz:
+% \left( \;
+% \begin{matrix}
+% 	* & * \\
+% 	* & * \\
+% 	* & * 
+% \end{matrix}
+% \; \right)
+
+
+% Tabla:
+% \begin{tabular}{|c|c|}
+%	\hline
+%	* & * \\
+%	\hline
+%	* & * \\
+%	\hline
+% \end{tabular}
+
+% Enumerar:
+% \begin{enumerate}
+% \item
+% \item
+% \item
+% \end{enumerate}
+
+
+% Imagen:
+% \begin{figure}[h]
+%   \centering
+%	\includegraphics[width=0.7\linewidth, height=0.7\textheight]{~/Imágenes/Imagenes/00wallpaper03.jpg}
+	%\includegraphics[scale=1]{~/Imágenes/Imagenes/00wallpaper03.jpg}
+%	\color{white}
+%   \caption{descripcción}
+	%\label{imag1}
+% \end{figure}
+
+
+% Bibliografia:
+% \begin{thebibliography}{00}
+% \bibitem{REF_1} 
+% \bibitem{REF_2} 
+% \bibitem{REF_4}
+% \bibitem{REF_5}
+% \bibitem{REF_6}
+% \end{thebibliography}

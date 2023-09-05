@@ -24,6 +24,7 @@ map('n', '<leader>tx1', ':lua export_template("~/.config/nvim/templates-Latex/te
 map('n', '<leader>tx2', ':lua export_template("~/.config/nvim/templates-Latex/tex2.tex")<CR>', default_opts)
 map('n', '<leader>port', ':lua export_template("~/.config/nvim/templates-Latex/Portada.tex")<CR>', default_opts)
 map('n', '<leader>book', ':lua export_template("~/.config/nvim/templates-Latex/book.tex")<CR>', default_opts)
+map('n', '<leader>bm', ':lua export_template("~/.config/nvim/templates-Latex/beamer.tex")<CR>', default_opts)
 
 ---------------------Atajos_Python------------------------
 
