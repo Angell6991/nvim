@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/angell/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["jupyter-vim"] = {
+    loaded = true,
+    path = "/home/angell/.local/share/nvim/site/pack/packer/start/jupyter-vim",
+    url = "https://github.com/jupyter-vim/jupyter-vim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/angell/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -170,6 +175,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/angell/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/home/angell/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
   },
   vimtex = {
     loaded = true,
