@@ -5,27 +5,12 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 require('telescope').setup{
-  defaults = {
-    -- ...
-    },
-  pickers = {
-        find_files = {
-          theme = "dropdown",
+    defaults = {},
+    pickers = {
+        find_files  =   {theme  =   "dropdown"},
+        live_grep   =   {theme  =   "dropdown"},
+        buffers     =   {theme  =   "dropdown"},
+        help_tags   =   {theme  =   "dropdown"},
         },
-
-        live_grep = {
-          theme = "dropdown",
-        },
-
-        buffers = {
-          theme = "dropdown",
-        },
-        help_tags = {
-          theme = "dropdown",
-        },
-
-    },
-  extensions = {
-    -- ...
-    }
+    extensions = {}
 }
