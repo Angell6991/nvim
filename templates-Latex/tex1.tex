@@ -1,22 +1,31 @@
 \documentclass[10pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
+% \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{txfonts}
+% \usepackage{txfonts}
 \usepackage{mathrsfs}
 \usepackage{color}
 \usepackage{parskip}
 \usepackage{pagecolor}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
+\usepackage{unicode-math} % Agrega el paquete unicode-math para cambiar la fuente de las ecuaciones
+\usepackage{fontspec}  % Agrega el paquete fontspec para cambiar la fuente del documento
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{Nombre del Autor}
 
+% Configurar la fuente del texto
+% \setmainfont{TeX Gyre Pagella}
+
+% % Configurar la fuente matemática
+\setmathfont{Latin Modern Math}
+
 %definiendo notación para los braket´s y spin´s
-\newcommand{\spin}[1]{\boldsymbol{#1}}
+% \newcommand{\spin}[1]{\boldsymbol{#1}}
+\newcommand{\spin}[1]{\symbf{#1}}
 \newcommand{\bra}[1]{\left\langle {#1} \right|}
 \newcommand{\ket}[1]{\left| {#1} \right\rangle}
 \newcommand{\esperado}[1]{\left \langle  {#1} \right\rangle}
