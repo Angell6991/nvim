@@ -84,7 +84,7 @@ return require('packer').startup(function(use)
 
     use 'tpope/vim-commentary'
 
-    use {'jupyter-vim/jupyter-vim',}
+    -- use {'jupyter-vim/jupyter-vim',}
 
 end)
 

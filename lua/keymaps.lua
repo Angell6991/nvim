@@ -74,10 +74,10 @@ map('v', '<S-Tab>', '<gv', { noremap = true, silent = true })
 -------Configuracion_para_Jupyter-Qtconsole_en_nvim------
 ---------------------------------------------------------
 
-vim.api.nvim_set_keymap('n', '<leader>jj', [[:JupyterConnect<CR>]], { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>jk', [[:JupyterDisconnect<CR>]], { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>jf', [[:JupyterRunFile<CR>]], { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>jc', [[:JupyterSendCell<CR>]], { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>jr', [[:JupyterSendRange<CR>]], { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<leader>jj', [[:JupyterConnect<CR>]], { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<leader>jk', [[:JupyterDisconnect<CR>]], { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<leader>jf', [[:JupyterRunFile<CR>]], { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<leader>jc', [[:JupyterSendCell<CR>]], { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<leader>jr', [[:JupyterSendRange<CR>]], { noremap = true, silent = true })
 
 
