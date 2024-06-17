@@ -38,3 +38,6 @@ opt.termguicolors = true
 o.encoding = "utf-8"
 o.termguicolors = true
 o.cursorline = true
+
+
+-- instalar portapapeles en wayland: sudo pacman -S wl-clipboard
