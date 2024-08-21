@@ -35,6 +35,10 @@ map('n', '<leader>py4', ':lua export_template("~/.config/nvim/templates-Python/p
 
 map('n', '<leader>pyl', ':lua export_template("~/.config/nvim/templates-Python/regresion_lineal.py")<CR>', default_opts)
 
+----------------------Atajos_Bash-------------------------
+
+map('n', '<leader>sh1', ':lua export_template("~/.config/nvim/templates-Bash/plantilla_01.sh")<CR>', default_opts)
+
 -------------------------Remaps--------------------------
 
 ---Mover_Bloques
