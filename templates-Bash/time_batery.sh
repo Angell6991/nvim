@@ -1,10 +1,14 @@
 #!/bin/bash
 
+clear
+
 # tiempo de duracion 1 hora = 3600 segundos
 time_duration=3600
 
 # time interval 2 minutos = 120 seguntos
 delta_time=120
+
+echo    "Taking data..."
 
 for ((i=0; i<=$time_duration; i=i+$delta_time));
     do
@@ -14,3 +18,4 @@ for ((i=0; i<=$time_duration; i=i+$delta_time));
         sleep   $delta_time
     done
 
+echo    "Data collection completed"
