@@ -1,7 +1,7 @@
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = "moonfly", --'codedark', 'moonfly','codedark',
+    theme = "moonfly", -- Puedes mantener o cambiar esto según tu preferencia
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {
@@ -20,7 +20,16 @@ require('lualine').setup {
   sections = {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff', 'diagnostics'},
-    lualine_c = {'filename'},
+    lualine_c = {
+      'filename',
+      {
+        'buffers', 
+        icons_enabled = true, 
+        max_length = vim.o.columns / 4, -- Ajusta el tamaño según sea necesario
+        symbols = { alternate_file = '󰣙 ', modified = '󰆓 ', pinned = ' ' },
+        filetype_names = { ['lua'] = 'Lua', ['python'] = 'Python' }
+      }
+    },
     lualine_x = {'encoding', 'fileformat', 'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location'}
@@ -38,3 +47,4 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {}
 }
+

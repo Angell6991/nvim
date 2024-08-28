@@ -20,7 +20,8 @@ return require('packer').startup(function(use)
         }
 
     -- use {'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons'}
-    use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+    -- use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+    use {'nvim-tree/nvim-web-devicons'}
 
     use {"akinsho/toggleterm.nvim", tag = '*', config = function()
         require("toggleterm").setup()
@@ -60,6 +61,24 @@ return require('packer').startup(function(use)
  
 --theme_nvim
     use {'nyoom-engineering/oxocarbon.nvim'}
+    -- use {"sekke276/dark_flat.nvim"}
+    -- use {"rebelot/kanagawa.nvim"}    
+    -- use {
+    --   "killitar/obscure.nvim",
+    --   lazy = false,
+    --   priority = 1000,
+    --   opts = {}
+    -- }
+    -- use {
+    --   "eldritch-theme/eldritch.nvim",
+    --   lazy = false,
+    --   priority = 1000,
+    --   opts = {},
+    -- }
+    -- use { "zootedb0t/citruszest.nvim" }
+    -- use {'maxmx03/fluoromachine.nvim'}
+    
+
 
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     ---Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
