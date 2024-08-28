@@ -11,7 +11,7 @@ map('n', '<S-Left>', ':bprevious<CR>', default_opts)
 
 ----------------Abrir_y_cerrar_buffer--------------------
 
-map('n', '<leader>c', ':bd <CR>', {noremap = true, silent = true})
+map('n', '<leader>b', ':bd <CR>', {noremap = true, silent = true})
 map('n', '<leader>n', ':enew <CR>', {noremap = true, silent = true})
 
 -------------------Guardar_cambios-----------------------
@@ -53,7 +53,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 --- Abrir_y_cerrar_vsplit
 map('n', '<leader>v', ':vs<CR>', { noremap = true, silent = true })
-map('n', '<leader>b', ':sp<CR>', { noremap = true, silent = true })
+map('n', '<leader>h', ':sp<CR>', { noremap = true, silent = true })
 map('n', '<leader>q', ':q<CR>', { noremap = true, silent = true })
 
 
