@@ -3,8 +3,8 @@ require("mason").setup({
 
 
         check_outdated_packages_on_open = true,
-        width = 0.5,
-        height = 0.5,
+        width = 0.6,
+        height = 0.7,
 
 
 

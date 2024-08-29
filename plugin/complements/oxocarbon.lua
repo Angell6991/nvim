@@ -19,7 +19,7 @@ vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = "#962a6b" })    -- Ajusta el co
 vim.api.nvim_set_hl(0, "TelescopePromptNormal", { fg = "#b9b9b9" }) -- Ajusta el color del texto en el prompt
 vim.api.nvim_set_hl(0, "TelescopeResultsNormal", { fg = "#b9b9b9" }) -- Ajusta el color del texto en los resultados
 vim.api.nvim_set_hl(0, "TelescopePreviewNormal", { bg = "none" }) -- Ajusta el color del fondo de la vista previa
-vim.api.nvim_set_hl(0, "TelescopePromptBorder", { fg = "#ff16a3" , bg = "none" }) -- Borde  en el prompt
+vim.api.nvim_set_hl(0, "TelescopePromptBorder", { fg = "#962a6b" , bg = "none" }) -- Borde  en el prompt
 vim.api.nvim_set_hl(0, "TelescopePreviewTitle", { fg = "#ff16a3" , bg = "none"}) -- Título  en la vista previa
 vim.api.nvim_set_hl(0, "TelescopePromptTitle", { fg = "#ff16a3" , bg = "none"}) -- Título  en el prompt
 
