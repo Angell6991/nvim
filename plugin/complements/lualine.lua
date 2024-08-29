@@ -39,7 +39,7 @@ require('lualine').setup {
         lualine_y = {
             {
                 'datetime', 
-                style = "%H:%M | %D"}, 
+                style = "%H:%M  %D"}, 
             {
                 'fileformat', 
                 symbols = {
