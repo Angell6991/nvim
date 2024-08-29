@@ -23,11 +23,8 @@ require('lualine').setup {
     },
     sections = {
         lualine_a = {'mode'},
-        lualine_b = {'branch', 'diff', 'diagnostics'},
-        lualine_c = {},
-        -- lualine_c = {'filename',},
-        -- lualine_x = {'encoding', 'fileformat', 'filetype'},
-        lualine_x = {
+        lualine_b = {'branch','filesize',},
+        lualine_c = {
             {
                 'buffers', 
                 icons_enabled = true, 
@@ -35,22 +32,24 @@ require('lualine').setup {
                 symbols = { 
                     alternate_file = '󰅏 ', 
                     modified = ' 󰆓 ', 
-                    pinned = '  ', 
                 },
-                -- filetype_names = { 
-                --     ['lua'] = 'Lua', 
-                --     ['python'] = 'Py',
-                --     ['sh'] = 'Sh',
-                --     ['dat'] = 'dat',
-                --     ['c'] = 'C',
-                --     ['cpp'] = 'C++',
-                --     ['tex'] = 'Tex',
-                -- }
             },
-            'fileformat', 
-            'filetype',
         },
-        lualine_y = {'progress'},
+        lualine_x = {},
+        lualine_y = {
+            {
+                'datetime', 
+                style = "%H:%M | %D"}, 
+            {
+                'fileformat', 
+                symbols = {
+                    unix = ' ', -- e712
+                    dos = ' ',  -- e70f
+                    mac = ' ',  -- e711
+                },
+            }, 
+            'progress' ,
+        },
         lualine_z = {'location'}
     },
     inactive_sections = {
