@@ -1,15 +1,15 @@
-import matplotlib.pyplot as plt
-import numpy as np
-import os
+import  matplotlib.pyplot   as  plt
+import  numpy   as  np
+import  os
 
 os.system("clear")
 
 # Datos de ejemplo
-x = np.linspace(0, 10, 100)
-y1 = np.sin(x)
-y2 = np.cos(x)
-y3 = np.exp(-x)
-y4 = np.sqrt(x)
+x   =   np.linspace(0, 10, 100)
+y1  =   np.sin(x)
+y2  =   np.cos(x)
+y3  =   np.exp(-x)
+y4  =   np.sqrt(x)
 
 # Crear la figura y los subgráficos
 fig, axs = plt.subplots(2, 2, figsize=(5, 5), facecolor="#1D1D1D")
@@ -73,6 +73,7 @@ for ax in axs.flat:
     ax.tick_params(axis='y', colors='#5AEDA3')
 
 # Guardar la figura como archivo de imagen
+# plt.savefig("grafica_tabla.pdf")
 # plt.savefig("grafica_tabla.png")
 
 # Mostrar la figura
