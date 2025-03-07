@@ -37,8 +37,8 @@ map('n', '<leader>pyl', ':lua export_template("~/.config/nvim/templates-Python/r
 
 ----------------------Atajos_Bash-------------------------
 
-map('n', '<leader>shb', ':lua export_template("~/.config/nvim/templates-Bash/time_batery.sh")<CR>', default_opts)
-map('n', '<leader>sh1', ':lua export_template("~/.config/nvim/templates-Bash/plantilla_01.sh")<CR>', default_opts)
+map('n', '<leader>zhb', ':lua export_template("~/.config/nvim/templates-Bash/time_batery.sh")<CR>', default_opts)
+map('n', '<leader>zh1', ':lua export_template("~/.config/nvim/templates-Bash/plantilla_01.sh")<CR>', default_opts)
 
 -------------------------Remaps--------------------------
 
