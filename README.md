@@ -91,7 +91,7 @@ Tecla  <kbd>leader</kbd> = <kbd>space</kbd>
 |<kbd>leader</kbd> + <kbd>pyl</kbd>|open template lineal regresion
 
 
-##  Templates Bash-------------------------
+##  Templates Bash
 | Keys | Action |
 |:-|:-|
 |<kbd>leader</kbd> + <kbd>zhb</kbd>|open template battery
