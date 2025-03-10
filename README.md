@@ -7,10 +7,9 @@ Clone repository:
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
-Tambien puedes revisar el [git-hub de packer](https://github.com/wbthomason/packer.nvim) y instalar con git clone.
+You can also check [packer's git-hub](https://github.com/wbthomason/packer.nvim) and install with git clone.
 
-Para iniciar packer es nesesario entrar a nvim en el documento packer.lua y escribir en la linea de comandos:
-
+To start packer it is necessary to enter nvim in the packer.lua document and write in the command line:
 ```sh
 :so
 ```
@@ -20,12 +19,12 @@ Para iniciar packer es nesesario entrar a nvim en el documento packer.lua y escr
 
 ##  Check and install telescope dependencies
 
-usar en la linea de comandos para revisar programas faltantes: 
-
+Use on the command line to check for missing programs:
 ```sh
 :checkhealth telescope  
 ```
-Los programas faltantes para telescope en general es live-grep pero tambien se puede instalar como sustituto ripgrep:
+
+The missing programs for telescope in general is live-grep but you can also install ripgrep as a substitute:
 ```sh
 sudo pacman -S  ripgrep
 ```
@@ -40,17 +39,17 @@ Tecla  <kbd>leader</kbd> = <kbd>space</kbd>
 ##  Keys basics
 | Keys | Action |
 |:-|:-|
-|<kbd>leader</kbd> + <kbd>q</kbd>|cerrar split
-|<kbd>leader</kbd> + <kbd>w</kbd>|guardar cambios
-|<kbd>ctrl</kbd> + <kbd>t</kbd>|abrir terminal
+|<kbd>leader</kbd> + <kbd>q</kbd>|close split
+|<kbd>leader</kbd> + <kbd>w</kbd>|save changes
+|<kbd>ctrl</kbd> + <kbd>t</kbd>|open terminal
 |<kbd>leader</kbd> + <kbd>v</kbd>|open split vertical
 |<kbd>leader</kbd> + <kbd>h</kbd>|open split horizontal
 |<kbd>ctrl</kbd> + <kbd>k</kbd>|move down split
 |<kbd>ctrl</kbd> + <kbd>i</kbd>|move up split
 |<kbd>ctrl</kbd> + <kbd>l</kbd>|move right split
 |<kbd>ctrl</kbd> + <kbd>j</kbd>|move left split
-|<kbd>Tab</kbd> |   tabula la linea de texto
-|<kbd>Tab</kbd> + <kbd>Shift</kbd>| deshace la tabulación
+|<kbd>Tab</kbd> | tabulates the text line
+|<kbd>Tab</kbd> + <kbd>Shift</kbd>| undo tab stop
 
 
 ##  Keys telescope and LaTex
