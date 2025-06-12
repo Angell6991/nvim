@@ -94,6 +94,6 @@ Tecla  <kbd>leader</kbd> = <kbd>space</kbd>
 | Keys | Action |
 |:-|:-|
 |<kbd>leader</kbd> + <kbd>zhb</kbd>|open template battery
-|<kbd>leader</kbd> + <kbd>zsh1</kbd>|open template simple
+|<kbd>leader</kbd> + <kbd>zh1</kbd>|open template simple
 
 
