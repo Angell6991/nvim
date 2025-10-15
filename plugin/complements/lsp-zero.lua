@@ -1,39 +1,67 @@
-local lsp = require('lsp-zero').preset({})
+-- Configuración nvim-cmp
+local cmp_status_ok, cmp = pcall(require, 'cmp')
+if not cmp_status_ok then
+  return
+end
 
-lsp.on_attach(
-    function(client, bufnr)
-    lsp.default_keymaps({buffer = bufnr})
-    end
-)
+local luasnip_status_ok, luasnip = pcall(require, 'luasnip')
+if not luasnip_status_ok then
+  return
+end
 
-lsp.setup()
-
-
--- You need to setup `cmp` after lsp-zero
 local cmp = require('cmp')
-local cmp_action = require('lsp-zero').cmp_action()
 
 cmp.setup({
-    mapping = {
-        -- `Enter` key to confirm completion
-        ['<CR>'] = cmp.mapping.confirm({select = false}),
+  snippet = {
+    expand = function(args)
+      luasnip.lsp_expand(args.body) -- Importante para expandir snippets
+    end,
+  },
+  mapping = cmp.mapping.preset.insert({
+    ['<C-b>'] = cmp.mapping.scroll_docs(-4),
+    ['<C-f>'] = cmp.mapping.scroll_docs(4),
+    ['<C-Space>'] = cmp.mapping.complete(),
+    ['<C-e>'] = cmp.mapping.abort(),
+    ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Enter para confirmar
+  }),
+  sources = cmp.config.sources({
+    { name = 'nvim_lsp' },
+    { name = 'luasnip' },
+  }, {
+    { name = 'buffer' },
+    { name = 'path' },
+  }),
+})
 
-        -- Ctrl+Space to trigger completion menu
-        ['<C-Space>'] = cmp.mapping.complete(),
+-- Configuración Mason
+require('mason').setup()
+require('mason-lspconfig').setup({
+  ensure_installed = { 'pyright', }, -- servidores comunes, ajusta a tus lenguajes
+  automatic_installation = true,
+})
 
-        -- Navigate between snippet placeholder
-        ['<C-f>'] = cmp_action.luasnip_jump_forward(),
-        ['<C-b>'] = cmp_action.luasnip_jump_backward(),
-    }
+-- Configuración LSP con la nueva API vim.lsp.config y vim.lsp.enable
+local cmp_nvim_lsp_status, cmp_nvim_lsp = pcall(require, 'cmp_nvim_lsp')
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+if cmp_nvim_lsp_status then
+  capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
+end
+
+-- Configura Pyright (ejemplo para Python)
+vim.lsp.config('pyright', {
+  capabilities = capabilities,
+  settings = {
+    python = {
+      analysis = {
+        typeCheckingMode = "basic",
+      },
+    },
+  },
+})
+vim.lsp.enable('pyright')
+
+vim.diagnostic.config({
+  underline = false,  -- Desactiva subrayado globalmente
 })
 
 
--- Define una función para configurar los manejadores de LSP
-local function configurarLSP()
-    -- Ocultar mensajes de diagnóstico de Pyright
-    local lsp_handlers = vim.lsp.handlers
-    lsp_handlers["textDocument/publishDiagnostics"] = function() end
-end
-
--- Llama a la función para configurar los manejadores de LSP al iniciar Neovim
-configurarLSP()

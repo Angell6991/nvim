@@ -28,29 +28,17 @@ return require('packer').startup(function(use)
         end
         }
 
-    use {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v2.x',
-        requires = {
-            
-            -- LSP Support
-            {'neovim/nvim-lspconfig'},             -- Required
-            {                                      -- Optional
-            'williamboman/mason.nvim',
-            run = function()
-            pcall(vim.cmd, 'MasonUpdate')
-            end,
-            },
-            {'williamboman/mason-lspconfig.nvim'}, -- Optional
-
-            -- Autocompletion
-            {'hrsh7th/nvim-cmp'},     -- Required
-            {'hrsh7th/cmp-nvim-lsp'}, -- Required
-            {'L3MON4D3/LuaSnip'},     -- Required
-               
-        }
-        }
-
+    -- config_auto_completation
+    use 'neovim/nvim-lspconfig'
+    use 'hrsh7th/nvim-cmp'           -- Plugin base de autocompletado
+    use 'hrsh7th/cmp-buffer'         -- fuente: buffer
+    use 'hrsh7th/cmp-path'           -- fuente: rutas de archivos
+    use 'hrsh7th/cmp-nvim-lsp'       -- fuente LSP
+    use 'hrsh7th/cmp-nvim-lua'       -- fuente API de Lua de nvim (opcional)
+    use 'L3MON4D3/LuaSnip'           -- motor de snippets
+    use 'saadparwaiz1/cmp_luasnip'   -- integración snippets y nvim-cmp
+    use 'williamboman/mason-lspconfig.nvim'
+    -------
 
     use {
         "williamboman/mason.nvim",
@@ -59,7 +47,7 @@ return require('packer').startup(function(use)
 
     use 'lervag/vimtex'
  
---theme_nvim
+    --theme_nvim
     use {'nyoom-engineering/oxocarbon.nvim'}
     -- use {"sekke276/dark_flat.nvim"}
     -- use {"rebelot/kanagawa.nvim"}    
@@ -83,7 +71,7 @@ return require('packer').startup(function(use)
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     ---Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-    use 'p00f/nvim-ts-rainbow'
+    -- use 'p00f/nvim-ts-rainbow'
 
     use {
         'mawkler/modicator.nvim',
