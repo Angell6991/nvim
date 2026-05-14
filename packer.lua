@@ -19,10 +19,10 @@ return require('packer').startup(function(use)
 
     use {'nvim-tree/nvim-web-devicons'}
 
-    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-        require("toggleterm").setup()
-        end
-    }
+    -- use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    --     require("toggleterm").setup()
+    --     end
+    -- }
 
     -- config_auto_completation
     use 'neovim/nvim-lspconfig'
@@ -41,7 +41,7 @@ return require('packer').startup(function(use)
         run = ":MasonUpdate" -- :MasonUpdate updates registry contents
     }
 
-    use 'lervag/vimtex'
+    -- use 'lervag/vimtex'
  
     --theme_nvim
     use {'nyoom-engineering/oxocarbon.nvim'}
